@@ -64,7 +64,7 @@ namespace jgod { namespace clns {
 
 #pragma mark - Sets
   template <typename T>
-  /** Returns a vector of all elements between two (unsorted) vectors of elements. */
+  /** Sorts and returns a vector of all elements between two (unsorted) vectors of elements. */
   const std::vector<T> getUnion(std::vector<T> &a, std::vector<T> &b) {
     std::vector<T> un(a.size() + b.size());
     std::sort(std::begin(a), std::end(a));
@@ -78,7 +78,7 @@ namespace jgod { namespace clns {
   }
 
   template <typename T>
-  /** Returns a vector of matched elements between two (unsorted) vectors of elements. */
+  /** Sorts and returns a vector of matched elements between two (unsorted) vectors of elements. */
   const std::vector<T> getIntersection(std::vector<T> &a, std::vector<T> &b) {
     std::vector<T> xion(a.size() + b.size());
     std::sort(std::begin(a), std::end(a));
@@ -93,7 +93,7 @@ namespace jgod { namespace clns {
   }
 
   template <typename T>
-  /** Returns a vector of diffed elements between two (unsorted) vectors of elements. */
+  /** Sorts and returns a vector of diffed elements between two (unsorted) vectors of elements. */
   const std::vector<T> getDifference(std::vector<T> &a, std::vector<T> &b) {
     std::vector<T> diff(a.size() + b.size());
     std::sort(std::begin(a), std::end(a));
