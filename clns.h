@@ -53,9 +53,11 @@ namespace jgod { namespace clns {
 
 #pragma mark - Modifying
   template <typename T>
+  /** Removes falsy values from the vector. */
   void compact(std::vector<T> &v) {
     v.erase(std::remove_if(v.begin(), v.end(), [](const T &t){return !t;}), v.end());
   }
+  /** Removes falsy values from the vector. */
   void compact(std::vector<std::string> &v) {
     v.erase(std::remove(v.begin(), v.end(), ""), v.end());
   }
