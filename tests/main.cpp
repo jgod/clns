@@ -77,7 +77,7 @@ TEST_CASE("sets") {
     }
     SECTION("get difference") {
       const auto DIFF = std::vector<std::string>{"apple", "bird", "broom", "car", "cat"};
-      REQUIRE(clns::getDifference(a, b) == DIFF);
+      REQUIRE(clns::getDifferences(a, b) == DIFF);
     }
   }
 
@@ -95,7 +95,7 @@ TEST_CASE("sets") {
     }
     SECTION("get difference") {
       const auto DIFF = std::vector<int>{2, 4, 5, 6};
-      REQUIRE(clns::getDifference(a, b) == DIFF);
+      REQUIRE(clns::getDifferences(a, b) == DIFF);
     }
   }
 }

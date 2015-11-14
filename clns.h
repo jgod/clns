@@ -94,7 +94,7 @@ namespace jgod { namespace clns {
 
   template <typename T>
   /** Returns a vector of diffed elements between two vectors of elements, sorting them first */
-  const std::vector<T> getDifference(std::vector<T> &a, std::vector<T> &b) {
+  const std::vector<T> getDifferences(std::vector<T> &a, std::vector<T> &b) {
     std::vector<T> diff(a.size() + b.size());
     std::sort(std::begin(a), std::end(a));
     std::sort(std::begin(b), std::end(b));
