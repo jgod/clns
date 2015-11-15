@@ -58,7 +58,7 @@ namespace jgod { namespace clns {
     v.erase(std::remove_if(v.begin(), v.end(), [](const T &t){return !t;}), v.end());
   }
   /** Removes falsy values from the vector. */
-  void compact(std::vector<std::string> &v) {
+  inline void compact(std::vector<std::string> &v) {
     v.erase(std::remove(v.begin(), v.end(), ""), v.end());
   }
 
