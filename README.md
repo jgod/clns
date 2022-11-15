@@ -28,4 +28,5 @@ clns::getDifferences({"a", "b", "c"}, {"c", "d", "e"}) == {"a", "b", "d", "e"}
 
 ## license
 
-MIT
+Copyright Justin Godesky.
+Released under the AGPLv3 License.
